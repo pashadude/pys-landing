@@ -1,12 +1,363 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ProveYourSkillz</title><link type="text/css" rel="stylesheet" href="css/all.css"><script type="text/javascript" src="js/all.js"></script><script type="text/javascript" src="//vk.com/js/api/openapi.js?101"></script><!--[if lt IE 9]><script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script><![endif]--></head><body><div id="fb-root"></div><script>(function(d, s, id) {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=500">
+    <title>ProveYourSkillz</title>
+<link type="text/css" rel="stylesheet" href="css/all.css">
+<script type="text/javascript" src="js/all.js"></script>
+
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?101"></script>
+    
+    <!--[if lt IE 9]><script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script><![endif]-->
+</head>
+<body>
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=306773189385075";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script><div class="modal fade" id="signin-form" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title">Sign in your account</h4></div><div class="modal-body"><form action="/signin/" role="form" method="post"><div class="form-group"><input type="text" class="form-control" placeholder="Email or nickname"></div><div class="form-group"><input type="password" class="form-control" placeholder="Password"></div><button type="submit" class="btn btn-primary btn-block">Go!</button></form></div></div></div></div><div id="invite-background" class="hidden"></div><header><div class="container"><div class="col-lg-3 col-md-3"><div id="logo"><img id="logo" src="img/logo@2x.png" alt="ProveYourSkillz" width="150" height="150"></div><div class="login"><a type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#signin-form"><span class="glyphicon glyphicon-lock"></span>&nbsp;Log In</a></div><div id="social-buttons" class="col-md-10 col-md-offset-1"><div class="button btn-facebook"><div class="fb-like" data-href="http://proveyourskillz.com" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div></div><div class="button btn-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="proveyourskillz">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div><div class="button btn-googleplus"><div class="g-plusone" data-size="medium"></div><script type="text/javascript">(function() {
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <div class="modal fade" id="signin-form" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Sign in your account</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="/signin/" role="form" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email or nickname">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Go!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <header>
+        <div class="container">
+            <div class="col-lg-3 col-md-12 col-xs-12">
+                <div class="col-xs-4 col-md-4">
+                    <div id="logo">
+                        <img id="logo" src="img/logo@2x.png" alt="ProveYourSkillz" width="150" height="150">
+                    </div>
+                    <div class="login">
+                        <a type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#signin-form"><span class="glyphicon glyphicon-lock"></span>&nbsp;Log In</a>
+                    </div>
+                </div>
+                <div id="social-buttons" class="col-md-6 col-md-offset-2 col-xs-8">
+                    <div class="button btn-facebook">
+                        <div class="fb-like" data-href="http://proveyourskillz.com" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+                    </div>
+                    <div class="button btn-twitter">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="proveyourskillz">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                    <div class="button btn-googleplus">
+                        <div class="g-plusone" data-size="medium"></div>
+                        <script type="text/javascript">
+                          (function() {
                             var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
                             po.src = 'https://apis.google.com/js/plusone.js';
                             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                          })();</script></div><div class="button btn-vk"><script type="text/javascript">VK.init({apiId: 2868856, onlyWidgets: true});</script><div id="vk_like"></div><script type="text/javascript">VK.Widgets.Like("vk_like", {type: "button", verb: 1, height: 20});</script></div></div></div><div class="col-lg-9 col-md-9 games"><ul class="nav nav-pills"><li><a href="#g-lol" class="logo lol" data-toggle="tab">League of Legends</a></li><li><a href="#g-smite" class="logo smite" data-toggle="tab">Smite</a></li><li><a href="#g-easports" class="logo easports" data-toggle="tab">EA Sports</a></li><li><a href="#g-comingsoon" class="comingsoon" data-toggle="tab"><span>More games<br>coming soon</span></a></li></ul><div class="tab-content"><div class="tab-pane left active"><h1>Let gaming earn<br>you real cash</h1></div><div class="tab-pane left" id="g-lol"><h2>Earn cash playing League Of Legends</h2><ul><li>Head 2 head and teamplay</li><li>All game modes available</li><li>Free buy-in or stake-based games</li><li>Auto result-reporting</li></ul></div><div class="tab-pane left" id="g-smite"><h2>Play lol for money with proveyourskillz.com</h2><ul><li>Head 2 head and teamplay</li><li>All game modes available</li><li>Free buy-in or stake-based games</li><li>Auto result-reporting</li></ul></div><div class="tab-pane left" id="g-easports"><h2>Ready, steady, cash!</h2><ul><li><strong>FIFA 13</strong> — head to head &amp; tournaments</li><li><strong>Madden NFL 13</strong></li><li><strong>Madden NFL 25</strong></li><li>Soon: <strong>FIFA 14</strong> (nextgen)</li></ul></div><div class="tab-pane right bw" id="g-comingsoon"><h2>Vote for your favorite games!</h2><ul><li>Battlefield 4</li><li>FIFA 14</li><li>UFC 14</li><li>More games coming soon</li></ul></div></div><div id="invite"><form action="/invite/" role="form" method="get" class="col-md-10 col-md-offset-1"><div class="input-group"><input type="email" class="form-control input-lg" placeholder="Get invited by email"><span class="input-group-btn"><button class="btn btn-primary btn-lg" type="button">Prove Your Skillz!</button></span></div></form></div></div></div></header><div id="feature-list"><div class="container"><div class="feature feature-left feature-top col-md-5"><p class="leaf">Play most popular <strong>Xbox, PlayStation, PC/Mac</strong> and <strong>mobile</strong> games or choose games you want to be the service</p><h5>Play games you like <i class="icon-gamepad"></i></h5></div><div class="feature feature-top feature-right col-md-5"><p class="leaf">Our sophisticated <strong>matching AI</strong> recommends rivals matching your gamer level</p><h5><i class="icon-group"></i> Compete rivals you match</h5></div><div class="feature feature-left feature-bottom col-md-5"><h5>Automatic result tracking <i class="icon-cogs"></i></h5><p class="leaf">Unique <strong>result-tracking</strong> and <strong>anti-cheat system</strong> guarantees fair play and does not require any additional user actions</p></div><div class="feature feature-right feature-bottom col-md-5"><h5><i class="icon-money"></i> Variety of tournaments</h5><p id="leaf-two" class="leaf">Experience <strong>different tournament schemes</strong> (league, play-off or single hed2head game, for prizes or cash, free-entry or stake-based) or customize your own</p></div></div></div><div id="extra-information"><div class="container"><ul class="nav nav-pills nav-stacked col-md-2 col-md-offset-1"><li class="active"><a href="#how-it-works" data-toggle="tab"><span>How it works</span></a></li><li><a href="#benchmarks" data-toggle="tab"><span>Benchmarks</span></a></li><li><a href="#features" data-toggle="tab"><span>Features</span></a></li><li><a href="#partnership" data-toggle="tab"><span>Partnership</span></a></li></ul><div class="tab-content col-md-9"><div id="how-it-works" class="tab-pane active"><ul><li><i class="icon-circle"></i>Register to the service</li><li><i class="icon-circle"></i>Pick games you would like to play for money</li><li><i class="icon-circle"></i>Provide your game account so we can trace your match results automatically</li><li><i class="icon-circle"></i>Join open tournament or challenge another gamer in head to head game</li><li><i class="icon-circle"></i>Make your stake or play for free</li><li><i class="icon-circle"></i>Play the match at the lobby/conference and time specified in the tournament/match rules</li><li><i class="icon-circle"></i>Get real cash and exciting prizes for the victory</li></ul></div><div id="benchmarks" class="tab-pane"><table id="competitors" class="table table-condensed"><colgroup><col style="width:30%"><col style="width:18%"><col style="width:13%"><col style="width:14%"><col style="width:13%"><col style="width:12%"></colgroup><thead><tr><th></th><th class="title">VirginGaming</th><th class="title"><span title="Battleground of Xfire">XFire</span></th><th class="title">Gamersaloon</th><th class="title"><span title="Major League Gaming">MLG</span></th><th class="title"><span title="Prove Your Skillz">PYS</span></th></tr></thead><tbody><tr><td class="title">Consoles</td><td><i class="icon-circle"></i></td><td><i class="icon-circle-blank"></i></td><td><i class="icon-circle"></i></td><td><i class="icon-circle"></i></td><td class="highlight"><i class="icon-circle"></i></td></tr><tr><td class="title">PC/MAC</td><td><i class="icon-circle-blank"></i></td><td><i class="icon-circle"></i></td><td><i class="icon-circle"></i></td><td><i class="icon-circle"></i></td><td class="highlight"><i class="icon-circle"></i></td></tr><tr><td class="title">Mobile</td><td><i class="icon-circle-blank"></i></td><td><i class="icon-circle-blank"></i></td><td><i class="icon-circle-blank"></i></td><td><i class="icon-circle"></i></td><td class="highlight"><i class="icon-circle"></i></td></tr><tr><td class="title">Auto-report of results</td><td><i class="icon-circle"></i></td><td><i class="icon-circle"></i></td><td><i class="icon-circle-blank"></i></td><td><i class="icon-circle-blank"></i></td><td class="highlight"><i class="icon-circle"></i></td></tr><tr><td class="title">Skill-based rival search</td><td><i class="icon-circle-blank"></i></td><td><i class="icon-circle-blank"></i></td><td><i class="icon-circle-blank"></i></td><td><i class="icon-circle-blank"></i></td><td class="highlight"><i class="icon-circle"></i></td></tr></tbody></table></div><div id="features" class="tab-pane"><div class="media"><img class="media-object pull-left" src="img/features/one-on-one.jpg" alt="One to one"><div class="media-body"><h3>Head to Head</h3><p>Challenge other gamers in head2head matches</p></div></div><div class="media"><img class="media-object pull-left" src="img/features/team-vs-team.jpg" alt="Team vs team"><div class="media-body"><h3>Teamplay</h3><p>Earn cash with your legendary team in command game modes</p></div></div><div class="media"><img class="media-object pull-left" src="img/features/clan.jpg" alt="Clan"><div class="media-body"><h3>Clan management</h3><p>Create and manage your own gaming clan</p></div></div><div class="media"><img class="media-object pull-left" src="img/features/tournaments.jpg" alt="Tournaments"><div class="media-body"><h3>Tournaments</h3><p>Tournamets differ by system (league, play-off, season). You can compete for prizes or cash. Some tournamets do not need entry fee others require buy-in purchase</p></div></div><div class="media"><img class="media-object pull-left" src="img/features/private-tournaments.jpg" alt="Private tournaments"><div class="media-body"><h3>Create your own tournament</h3><p>Crateyour own private tournament with your rules. Choose stake size and schedule. You can also make them private or invite--based.</p></div></div><div class="media"><img class="media-object pull-left" src="img/features/smart-search.jpg" alt="Smart search"><div class="media-body"><h3>Smart-search suggests opponets you match</h3><p>AI system analyzes game history aof all players and suggests rivals and tounaments which match your skill level. You might play with suggested rivals or anyone else.</p></div></div><div class="media"><img class="media-object pull-left" src="img/features/visa.jpg" alt="Visa"><div class="media-body"><h3>Secure payments</h3><p>Quick and secure infrastructure accepting credit cards and working with main pyment systems (Moneybookers, Neteller, Yandex-money)</p></div></div></div><div id="partnership" class="tab-pane"><h3>Advertise your goods to your target audience</h3><p>Use efficient advertising via branded page which is granted for tournament sponsorship. Tournament sponsorship might be either in a monetary form or by providing prize pool (virtual goods or physical prizes)</p><h3>Boost your sales via coupons and discounts</h3><p>Coupons and discounts might be used as prizes in our online videogaming tournaments. Our experience evidences that usage rate of coupons and discounts won by tournament participants is higher than average web-coupon redeem rate</p><address>+356&nbsp;3550&nbsp;0085<br><a href="mailto:partners@proveyourskillz.com">partners@proveyourskillz.com</a></address></div></div></div></div><footer><div class="container"><div class="col-md-5 col-md-offset-1"><h2>Ask for an invite</h2><p class="col-md-offset-1">Join our invite list rignt now. First users will be granted $5 bonus for free</p><form class="col-md-offset-1" action="/invite/" role="form" method="get"><div class="form-group"><input type="email" class="form-control" placeholder="Email"></div><div class="form-group"><button class="btn btn-primary btn-block" type="button">Get an invite</button></div></form></div><div class="col-md-5 col-md-offset-1"><h2>Get in Touch</h2><address class="col-md-offset-1"><i class="icon-phone icon3x"></i>&nbsp;+356&nbsp;3550&nbsp;0085<br><i class="icon-envelope icon3x"></i>&nbsp;<a href="mailto:feedback@proveyourskillz.com">feedback@proveyourskillz.com</a><br><i class="icon-skype icon3x"></i>&nbsp;<a href="skype:proveyourskillz?call">proveyourskillz</a></address></div><div class="col-md-4 col-md-offset-8">&copy; 2013 ProveYourSkillz LLC. All rights reserved.</div></div></footer></body></html>
+                          })();
+                        </script>
+                    </div>
+                    <div class="button btn-vk">
+                        <script type="text/javascript">
+                          VK.init({apiId: 2868856, onlyWidgets: true});
+                        </script>
+                        <div id="vk_like"></div>
+                        <script type="text/javascript">
+                        VK.Widgets.Like("vk_like", {type: "button", verb: 1, height: 20});
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clearfix hidden-lg"></div>
+            <div class="col-lg-9 col-md-12 col-xs-12 games">
+                <ul class="nav nav-pills">
+                    <li>
+                        <a href="#g-lol" class="logo lol" data-toggle="tab">League of Legends</a>
+                    </li><li>
+                        <a href="#g-smite" class="logo smite" data-toggle="tab">Smite</a>
+                    </li><li>
+                        <a href="#g-easports" class="logo easports" data-toggle="tab">EA Sports</a>
+                    </li><li>
+                        <a href="#g-comingsoon" class="comingsoon" data-toggle="tab">More</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane left active">
+                        <h1>Let gaming earn<br>you real cash</h1>
+                    </div>
+                    <div class="tab-pane left" id="g-lol">
+                        <h2>Earn cash playing League Of Legends</h2>
+                        <ul>
+                            <li>Head 2 head and teamplay</li>
+                            <li>All game modes available</li>
+                            <li>Free buy-in or stake-based games</li>
+                            <li>Auto result-reporting</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane left" id="g-smite">
+                        <h2>Play lol for money with proveyourskillz.com</h2>
+                        <ul>
+                            <li>Head 2 head and teamplay</li>
+                            <li>All game modes available</li>
+                            <li>Free buy-in or stake-based games</li>
+                            <li>Auto result-reporting</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane left" id="g-easports">
+                        <h2>Ready, steady, cash!</h2>
+                        <ul>
+                            <li><strong>FIFA 13</strong> — head to head &amp; tournaments</li>
+                            <li><strong>Madden NFL 13</strong></li>
+                            <li><strong>Madden NFL 25</strong></li>
+                            <li>Soon: <strong>FIFA 14</strong> (nextgen)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane right bw" id="g-comingsoon">
+                        <h2>Vote for your favorite games!</h2>
+                        <ul>
+                            <li>Battlefield 4</li>
+                            <li>FIFA 14</li>
+                            <li>UFC 14</li>
+                            <li>More games coming soon</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="invite">
+                    <form action="/invite/" role="form" method="get" class="col-md-10 col-md-offset-1">
+                        <div class="input-group">
+                            <input type="email" class="form-control input-lg" placeholder="Get invited by email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary btn-lg" type="button">Prove Your Skillz!</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+    
+    
+    <div id="feature-list">
+        <div class="container">
+            <div class="row top">
+                <div class="feature col-md-6">
+                    <h5>Play games you like</h5>
+                    <p class="leaf"><i class="icon pull-left icon-gamepad"></i>Play most popular <strong>Xbox, PlayStation, PC/Mac</strong> and <strong>mobile</strong> games or choose games you want to be the service</p>
+                </div>
+                <div class="feature col-md-6">
+                    <h5>Smart rival matching</h5>
+                    <p class="leaf"><i class="icon pull-left icon-bullseye"></i>Our sophisticated <strong>matching AI</strong> recommends rivals matching your gamer level</p>
+                </div>
+            </div>
+            <div class="row bottom">
+                <div class="feature col-md-6">
+                    <h5>Fair result tracking</h5>
+                    <p class="leaf"><i class="icon pull-left icon-legal"></i>Unique <strong>result-tracking</strong> and <strong>anti-cheat system</strong> guarantees fair play and does not require any additional user actions</p>
+                </div>
+                <div class="feature col-md-6">
+                    <h5>Variety of tournaments</h5>
+                    <p class="leaf"><i class="icon pull-left icon-trophy"></i>Experience <strong>different tournament schemes</strong> (league, play-off or head2head game, for prizes or cash, free-entry or stake-based) or customize your own</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="extra-information">
+        <div class="container">
+            <ul class="nav nav-pills nav-stacked col-md-2 col-md-offset-1">
+                <li class="active"><a href="#how-it-works" data-toggle="tab"><span>How it works</span></a></li>
+                <li><a href="#benchmarks" data-toggle="tab"><span>Benchmarks</span></a></li>
+                <li><a href="#features" data-toggle="tab"><span>Features</span></a></li>
+                <li><a href="#partnership" data-toggle="tab"><span>Partnership</span></a></li>
+            </ul>
+            <div class="tab-content col-md-9">
+                <div id="how-it-works" class="tab-pane fade active in">
+                    <ul>
+                        <li><i class="icon-circle"></i>Register to the service</li>
+                        <li><i class="icon-circle"></i>Pick games you would like to play for money</li>
+                        <li><i class="icon-circle"></i>Provide your game account so we can trace your match results automatically</li>
+                        <li><i class="icon-circle"></i>Join open tournament or challenge another gamer in head to head game</li>
+                        <li><i class="icon-circle"></i>Make your stake or play for free</li>
+                        <li><i class="icon-circle"></i>Play the match at the lobby/conference and time specified in the tournament/match rules</li>
+                        <li><i class="icon-circle"></i>Get real cash and exciting prizes for the victory</li>
+                    </ul>
+                </div>
+                <div id="benchmarks" class="tab-pane fade">
+                    <table id="competitors" class="table table-condensed">
+                        <colgroup>
+                        <col style="width:25%">
+                        <col style="width:18%">
+                        <col style="width:14%">
+                        <col style="width:15%">
+                        <col style="width:14%">
+                        <col style="width:13%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="title">VirginGaming</th>
+                            <th class="title"><span title="Battleground of Xfire">XFire</span></th>
+                            <th class="title">Gamersaloon</th>
+                            <th class="title"><span title="Major League Gaming">MLG</span></th>
+                            <th class="title highlight"><span title="Prove Your Skillz">PYS</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="title">Consoles</td>
+                            <td><i class="icon-circle"></i></td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td><i class="icon-circle"></i></td>
+                            <td><i class="icon-circle"></i></td>
+                            <td class="highlight"><i class="icon-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="title">PC/MAC</td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td><i class="icon-circle"></i></td>
+                            <td><i class="icon-circle"></i></td>
+                            <td><i class="icon-circle"></i></td>
+                            <td class="highlight"><i class="icon-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="title">Mobile</td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td><i class="icon-circle"></i></td>
+                            <td class="highlight"><i class="icon-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="title">Auto-report of results</td>
+                            <td><i class="icon-circle"></i></td>
+                            <td><i class="icon-circle"></i></td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td class="highlight"><i class="icon-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="title">Skill-based rival search</td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td><i class="icon-circle-blank"></i></td>
+                            <td class="highlight"><i class="icon-circle"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="features" class="tab-pane fade">
+                <div class="media">
+                    <img class="media-object pull-left" src="img/features/one-on-one.jpg" alt="One to one">
+                    <div class="media-body">
+                        <h3>Head to Head</h3>
+                        <p>Challenge other gamers in head2head matches</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img class="media-object pull-left" src="img/features/team-vs-team.jpg" alt="Team vs team">
+                    <div class="media-body">
+                        <h3>Teamplay</h3>
+                        <p>Earn cash with your legendary team in command game modes</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img class="media-object pull-left" src="img/features/clan.jpg" alt="Clan">
+                    <div class="media-body">
+                        <h3>Clan management</h3>
+                        <p>Create and manage your own gaming clan</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img class="media-object pull-left" src="img/features/tournaments.jpg" alt="Tournaments">
+                    <div class="media-body">
+                        <h3>Tournaments</h3>
+                        <p>Tournamets differ by system (league, play-off, season). You can compete for prizes or cash. Some tournamets do not need entry fee others require buy-in purchase</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img class="media-object pull-left" src="img/features/private-tournaments.jpg" alt="Private tournaments">
+                    <div class="media-body">
+                        <h3>Create your own tournament</h3>
+                        <p>Crateyour own private tournament with your rules. Choose stake size and schedule. You can also make them private or invite--based. </p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img class="media-object pull-left" src="img/features/smart-search.jpg" alt="Smart search">
+                    <div class="media-body">
+                        <h3>Smart-search suggests opponets you match</h3>
+                        <p> AI system analyzes game history aof all players and suggests rivals and tounaments which match your skill level. You might play with suggested rivals or anyone else.
+                        </p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img class="media-object pull-left" src="img/features/visa.jpg" alt="Visa">
+                    <div class="media-body">
+                        <h3>Secure payments</h3>
+                        <p>Quick and secure infrastructure accepting credit cards and working with main pyment systems (Moneybookers, Neteller, Yandex-money) </p>
+                    </div>
+                </div>
+            </div>
+            <div id="partnership" class="tab-pane fade">
+                <h3> Advertise your goods to your target audience</h3>
+                <p>Use efficient advertising via branded page which is granted for tournament sponsorship. Tournament sponsorship might be either in a monetary form or by providing prize pool (virtual goods or physical prizes)</p>
+                <h3>Boost your sales via coupons and discounts</h3>
+                <p>Coupons and discounts might be used as prizes in our online videogaming tournaments. Our experience evidences that usage rate of coupons and discounts won by tournament participants is higher than average web-coupon redeem rate</p>
+                <address>
+                    +356&nbsp;3550&nbsp;0085<br>
+                    <a href="mailto:partners@proveyourskillz.com">partners@proveyourskillz.com</a>
+                </address>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <footer>
+        <div class="container">
+            <div class="col-md-5 col-md-offset-1">
+                <h2>Ask for an invite</h2>
+                <p class="col-md-offset-1">Join our invite list rignt now. First users will be granted $5 bonus for free</p>
+                <form class="col-md-offset-1" action="/invite/" role="form" method="get">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="button">Get an invite</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                <h2>Get in Touch</h2>
+                <address class="col-md-offset-1">
+                    <i class="icon-phone icon3x"></i>&nbsp;+356&nbsp;3550&nbsp;0085<br>
+                    <i class="icon-envelope icon3x"></i>&nbsp;<a href="mailto:feedback@proveyourskillz.com">feedback@proveyourskillz.com</a><br>
+                    <i class="icon-skype icon3x"></i>&nbsp;<a href="skype:proveyourskillz?call">proveyourskillz</a>
+                </address>
+            </div>
+            <div class="col-md-4 col-md-offset-8 copyright">&copy; 2013 ProveYourSkillz LLC. All rights reserved.</div>
+        </div>
+    </footer>
+    
+</body>
+</html>
